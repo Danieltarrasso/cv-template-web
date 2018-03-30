@@ -1,5 +1,6 @@
-*{ margin:0; padding:0; }
-html,body{width:100%;height:100%;background-color: beige;}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+*{ margin:0; padding:0; font-family: Roboto;}
+html,body{width:100%;height:100%;background-color: #D6E2D2;}
 
 body{
   display: flex;
@@ -10,6 +11,7 @@ aside{
   flex: 2;
   height: 100%;
   border-right: 1px dashed black;
+  
 }
 aside img{
   display: block;
@@ -47,14 +49,24 @@ aside button{
   display: block;
   margin: 0 auto;
   padding: 1em;
-  border-radius: 1em;
+  border-radius: 5px;
+  font-size: 1.1em;
   outline: none;
+  background-color: #D6E2D2; 
+  border: 1px solid white;
 }
+aside button:hover{background-color: white;}
 
 section{
   flex: 5;
   height: 100%;
+  padding: 1em;
 }
+section h1{ font-size: 2em; margin: 1em;}
+section form{ margin: 1em; margin-left: 2em; padding:1em; text-align: center;}
+section form input, section form textarea{padding: 1em; margin:0.25em; border-radius: 5px; outline: none; width: 40%;}
+section form input[type='submit']{margin:1em; width: 40%; background-color: #D6E2D2; border: 1px solid white; font-size: 1.1em;}
+section form input[type='submit']:hover{padding: 1em; margin:1em; width: 40%; background-color: white; border: 1px solid beige;}
 
 nav{
   flex: 1;
@@ -65,14 +77,14 @@ nav ul{
   width: 90%;
   padding: 0.5em 0;
   margin-top: 5em;
-  background-color: white;
+  background-color: #CFE1D6;
   border-radius: 5px;
 }
 nav ul li{
   margin: 0.5em;
   text-align: center;  
 }
-nav ul li:hover{ background-color: beige; }
+nav ul li:hover{ background-color: #F5D797; }
 
 nav ul li a{
   text-decoration: none;
