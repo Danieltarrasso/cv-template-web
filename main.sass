@@ -1,0 +1,202 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900)
+$bgColor:#333
+
+$freshGreen: #4abdac
+$vermillion: #fc4a1a
+$sunshine: #f7b733
+$cleanWhite: #dfdce3
+
+*
+  margin:0
+  padding:0
+  font-family: Roboto
+
+html
+  height: 100%
+  width:  100%
+  overflow: hidden
+  background-color: $freshGreen
+  
+
+body
+  background-color:$freshGreen
+  overflow: hidden
+  width: 100%
+  min-height: 100%
+  color: $sunshine 
+  display: flex
+  flex-flow: row nowrap
+
+aside
+  flex: 2
+  border-right: 1px dashed black
+  color: black
+
+  a
+    color: black
+
+  button
+    display: block
+    margin: 0 auto
+    padding: 1em
+    border-radius: 5px
+    font-size: 1.1em
+    outline: none
+    background-color: $cleanWhite 
+    border: 2px solid $vermillion
+
+  button:hover
+    background-color: $vermillion
+    color: $cleanWhite
+
+  img
+    display: block
+    margin: 1em auto
+    width: 75%
+    background-color: $cleanWhite
+
+  h1
+    margin: 1em 0
+    text-align: center
+    
+  ul
+    padding: 0 2em
+    list-style: none
+      
+    li
+      margin: 1em
+
+section
+  flex: 5
+  height: 100%
+  padding: 1em
+
+  color: $vermillion
+
+  h1
+    font-size: 2em
+    margin: 1em
+    color: black
+
+  p
+    margin: 1em
+    color: black
+
+  .skills
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+
+    p
+      border-radius: 10px
+      background-color: $vermillion
+      color: $cleanWhite
+      padding: 1em
+      margin: 0.5em
+    
+    p:after
+      display: inline-block
+
+  .softskills
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+
+    p
+      border-radius: 10px
+      background-color: $cleanWhite
+      color: black
+      border: 1px solid $vermillion
+      padding: 1em
+      margin: 0.5em
+    
+    p:after
+      display: inline-block
+
+
+  form
+    margin: 1em
+    margin-left: 2em
+    padding:1em
+    text-align: center
+    
+    input
+      padding: 1em
+      margin:0.25em
+      border-radius: 5px
+      outline: none
+      width: 40%
+      background-color: $cleanWhite
+    
+    input[type="submit"]
+      margin:1em
+      width: 40%
+      background-color: $cleanWhite
+      border: 2px solid $vermillion
+      font-size: 1.1em
+
+    input[type="submit"]:hover
+      padding: 1em
+      margin:1em
+      width: 40%
+      background-color: $vermillion
+      color: $cleanWhite
+
+    textarea
+      padding: 1em
+      margin:0.25em
+      border-radius: 5px
+      outline: none
+      width: 40%
+      background-color: $cleanWhite
+    
+nav
+  flex: 1
+
+  ul
+    list-style: none
+    width: 90%
+    padding: 0.5em 0
+    margin-top: 5em
+    background-color: $cleanWhite
+    border-radius: 5px
+
+    li
+      margin: 0.5em
+      text-align: center
+      border-left: 2px solid $vermillion
+
+      a
+        text-decoration: none;
+        color: black
+    
+    li:hover
+      background-color: $vermillion
+      border-radius: 5px
+
+      a
+        color: $cleanWhite
+
+
+.email-icon:before
+  display: inline-block
+  font-family: "FontAwesome"
+  content: "\f1fa"
+  color: black
+  margin-right: 5px
+
+.github-icon:before
+  display: inline-block
+  font-family: "FontAwesome"
+  content: "\f09b"
+  color: black
+  margin-right: 5px
+
+.linkedin-icon:before
+  display: inline-block
+  font-family: "FontAwesome"
+  content: "\f08c"
+  color: black
+  margin-right: 5px
